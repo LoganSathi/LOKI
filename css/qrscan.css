@@ -1,0 +1,91 @@
+body {
+  background: linear-gradient(
+    -45deg,
+    #6b84cf,
+    #8fa2d9,
+    #cc79b5,
+    #c498c2,
+    #6b84cf,
+    #c498c2,
+    #8fa2d9,
+    #cc79b5
+  );
+  background-size: 300% 300%;
+  animation: change 10s ease-in-out infinite;
+}
+
+@keyframes change {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+#video-div {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 97vh;
+}
+#video-margin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#preview {
+  height: 97vh;
+  border-radius: 10px;
+  position: fixed;
+  z-index: 1;
+}
+
+#scanned-div {
+  font-family: Open Sans;
+  font-size: 18px;
+  color: #fff;
+  position: fixed;
+  bottom: 1vh;
+  z-index: 2;
+  border-radius: 10px;
+  height: 30vh;
+  width: 98vw;
+  background: linear-gradient(180deg, rgb(18, 18, 18, 0), rgb(18, 18, 18, 1));
+  overflow-y: scroll;
+}
+
+/* width */
+#scanned-div::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+#scanned-div::-webkit-scrollbar-track {
+  background: rgb(18, 18, 18, 0.1);
+}
+
+/* Handle */
+#scanned-div::-webkit-scrollbar-thumb {
+  background: #c498c2;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+#scanned-div::-webkit-scrollbar-thumb:hover {
+  background: #ac84ab;
+}
+
+#student {
+  text-align: center;
+  border-radius: 5px;
+  background-color: rgba(109, 109, 109, 0.3);
+  height: 30px;
+  margin: 12px;
+  padding: 0px 20px;
+}
