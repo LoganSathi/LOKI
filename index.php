@@ -1,2 +1,2 @@
 <?php
-include_once "../page/main.php";
+header("../page/main.php");
