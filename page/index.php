@@ -1,2 +1,2 @@
 <?php
-include_once '../page/main.php';
+include_once 'main.php';
